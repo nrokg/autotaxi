@@ -2,8 +2,9 @@ import requests
 import vk_api
 from random import randint
 import time
-
-token = open("token.txt", "r").read()
+# ////////////////////////////////////////////////////////////////////
+token = ""
+# ////////////////////////////////////////////////////////////////////
 vk_session = vk_api.VkApi(token=token)
 vk = vk_session.get_api()
 
