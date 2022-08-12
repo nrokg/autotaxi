@@ -65,9 +65,8 @@ while 1 == 1:
                 time.sleep(55)
             requests.get("https://api.vk.com/method/messages.send?access_token=" + token + "&peer_id=-166948584&random_id=" + str(randint(0,99999999999)) + '&message=обновить время&payload={\"taxi.road\":\"upd\"}&v=5.131')
 
-
         elif p.find("TAX8") != -1:
-            g = requests.get("https://api.vk.com/method/messages.send?access_token=" + token + "&peer_id=-166948584&random_id=" + str(randint(0,99999999999)) + '&message=🔼&payload={\"taxi.begin1\":1,\"if\":1,\"city\":3}&v=5.131')
+            g = requests.get("https://api.vk.com/method/messages.send?access_token=" + token + "&peer_id=-166948584&random_id=" + str(randint(0,99999999999)) + '&message=🔼&payload={\"taxi.begin1\":2,\"if\":1,\"city\":3}&v=5.131')
             g = g.text
             g = g.replace("{", "")
             g = g.replace('response":', "")
@@ -89,7 +88,7 @@ while 1 == 1:
             requests.get("https://api.vk.com/method/messages.send?access_token=" + token + "&peer_id=-166948584&random_id=" + str(randint(0,99999999999)) + '&message=обновить время&payload={\"taxi.road\":\"upd\"}&v=5.131')
 
         elif p.find("TAX5") != -1:
-            g = requests.get("https://api.vk.com/method/messages.send?access_token=" + token + "&peer_id=-166948584&random_id=" + str(randint(0,99999999999)) + '&message=🔼&payload={\"taxi.begin1\":1,\"if\":1,\"city\":3}&v=5.131')
+            g = requests.get("https://api.vk.com/method/messages.send?access_token=" + token + "&peer_id=-166948584&random_id=" + str(randint(0,99999999999)) + '&message=🔼&payload={\"taxi.begin1\":3,\"if\":1,\"city\":3}&v=5.131')
             g = g.text
             g = g.replace("{", "")
             g = g.replace('response":', "")
